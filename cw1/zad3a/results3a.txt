@@ -1,0 +1,65 @@
+Comment:
+Różnice w pomiarach czasów wykonywania opracji okazały się bardzo zblizone
+na różnych bibliotekach. Na małe różnice w czasach może mieć find który ma cache.
+Różnica pomiędzy bibliotekami jest taka, że statyczna jest zamieszczana w pliku wykonywalnym
+a wspoldzielona i dynamicznie maja osobny plik.
+
+-------------------------------------------------------------------
+-- static
+Created new array_blocks
+	Real time:   0.211597
+	User time:   0.000000
+	System time: 0.000000
+Search in directory: /home/lwronski files: * and save output to temp file: large
+	Real time:   0.211806
+	User time:   0.000000
+	System time: 0.000000
+Removed block at index: 0
+	Real time:   0.849306
+	User time:   0.000000
+	System time: 0.000000
+Search n times: 1000 in directory: /home/lwronski/Pulpit files: * and save output to temp file: medium
+	Real time:   38.849312
+	User time:   0.008000
+	System time: 0.708000
+
+-------------------------------------------------------------------
+Shared
+-------------------------------------------------------------------
+Created new array_blocks
+	Real time:   0.506053
+	User time:   0.000000
+	System time: 0.000000
+Search in directory: /home/lwronski files: * and save output to temp file: large
+	Real time:   0.506202
+	User time:   0.000000
+	System time: 0.000000
+Removed block at index: 0
+	Real time:   0.133552
+	User time:   0.000000
+	System time: 0.000000
+Search n times: 1000 in directory: /home/lwronski/Pulpit files: * and save output to temp file: medium
+	Real time:   37.133560
+	User time:   0.024000
+	System time: 0.704000
+
+-----------------------------------------------------------------------------------------------
+Dynamic
+-----------------------------------------------------------------------------------------------
+
+Created new array_blocks
+	Real time:   0.470954
+	User time:   0.000000
+	System time: 0.000000
+Search in directory: /home/lwronski files: * and save output to temp file: large
+	Real time:   0.471032
+	User time:   0.000000
+	System time: 0.000000
+Removed block at index: 0
+	Real time:   0.101080
+	User time:   0.000000
+	System time: 0.000000
+Search n times: 1000 in directory: /home/lwronski/Pulpit files: * and save output to temp file: medium
+	Real time:   39.101083
+	User time:   0.016000
+	System time: 0.716000
